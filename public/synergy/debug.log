@@ -1,2 +1,0 @@
-[0718/161443.674:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
-[0809/084014.748:ERROR:file_io.cc(134)] WriteFile: The pipe is being closed. (0xE8)
