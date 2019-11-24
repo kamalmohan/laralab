@@ -11,9 +11,21 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->middleware('auth');
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/welcome', 'WelcomeController@index');
 
 // Email related routes
 Route::get('mail/send', 'MailController@send');
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
